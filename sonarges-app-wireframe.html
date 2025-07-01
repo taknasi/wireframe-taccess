@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> T'access Sport Club App - Wireframe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        moroccan: {
+                            red: '#C8102E',
+                            green: '#006233',
+                            gold: '#FFD700'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .moroccan-pattern {
+            background: repeating-linear-gradient(45deg,
+                    #C8102E,
+                    #C8102E 10px,
+                    #006233 10px,
+                    #006233 20px);
+        }
+
+        .phone-shadow {
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .phone-content {
+            height: calc(100% - 32px);
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .phone-content::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+                margin: 0;
+                min-height: 100vh;
+            }
+            
+            .container {
+                padding: 0 !important;
+                margin: 0 !important;
+                min-height: 100vh;
+            }
+            
+            .container > h1 {
+                display: none !important;
+            }
+            
+            .carousel-container {
+                margin: 0 !important;
+                max-width: 100% !important;
+            }
+            
+            .phone-shadow {
+                width: 100vw !important;
+                height: 100vh !important;
+                border-radius: 0 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+            }
+            
+            .phone-shadow > div {
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 0 !important;
+            }
+            
+            .navigation-controls {
+                display: none !important;
+            }
+            
+            .screen-counter {
+                display: none !important;
+            }
+            
+            .phone-content {
+                height: calc(100vh - 32px);
+                max-height: none;
+            }
+            
+            .carousel-wrapper {
+                border-radius: 0 !important;
+            }
+            
+
+        }
+
+        @media (max-width: 480px) {
+            .phone-shadow {
+                width: 100vw !important;
+                height: 100vh !important;
+                border-radius: 0 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 dark:from-gray-900 dark:via-gray-800 dark:to-black min-h-screen transition-all duration-300">
+    <!-- Theme Toggle -->
+    <!-- <div class="fixed top-4 right-4 z-50">
+        <button onclick="toggleTheme()" class="bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:scale-110 transition-transform">
+            <span class="dark:hidden">🌙</span>
+            <span class="hidden dark:inline">☀️</span>
+        </button>
+    </div> -->
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center text-white mb-8">
+            🏃‍♂️ T'access Sport Club App - Warm Palette Design
+        </h1>
+
+        <!-- Carousel Container -->
+        <div class="max-w-md mx-auto relative carousel-container">
+            <!-- Screen Counter -->
+            <div class="text-center mb-4 screen-counter">
+                <span class="text-white text-lg font-semibold">
+                    <span id="current-screen">1</span> / <span id="total-screens">13</span>
+                </span>
+            </div>
+
+            <!-- Carousel Wrapper -->
+            <div class="relative overflow-hidden rounded-3xl carousel-wrapper">
+                <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+
+
+                    <!-- Screen 13: Modern QR Welcome -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <!-- Soft geometric shapes -->
+                                    <div class="absolute top-20 right-10 w-32 h-32 bg-[#E8553B]/20 rounded-full"></div>
+                                    <div class="absolute bottom-40 left-8 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute top-40 left-12 w-16 h-16 bg-[#007BD8]/20 rounded-lg rotate-12">
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content px-6 pt-8 pb-20">
+                                    <!-- Header Section -->
+                                    <div class="text-center mb-8">
+                                        <!-- App Logo/Brand -->
+                                        <div class="mb-6">
+                                            <div
+                                                class="w-20 h-20 bg-[#E8553B] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
+                                                <i class="fas fa-dumbbell text-white text-2xl"></i>
+                                            </div>
+                                            <h1 class="text-2xl font-bold text-[#4B1D13] mb-2">T'access</h1>
+                                            <p class="text-[#4B1D13]/70 text-sm">Sport Club Digital</p>
+                                        </div>
+
+                                        <!-- QR Code Visual Element -->
+                                        <div
+                                            class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg mb-6 border border-[#F29378]/20">
+                                            <div class="flex items-center justify-center mb-4">
+                                                <div
+                                                    class="w-24 h-24 bg-[#FBDDD4]/50 rounded-lg flex items-center justify-center border-2 border-dashed border-[#F29378]">
+                                                    <i class="fas fa-qrcode text-[#4B1D13]/60 text-3xl"></i>
+                                                </div>
+                                            </div>
+                                            <h3 class="text-lg font-bold text-[#4B1D13] mb-2">Accès Instantané</h3>
+                                            <p class="text-[#4B1D13]/70 text-sm">Scannez pour accéder rapidement à
+                                                toutes vos activités sportives</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fixed Bottom Navigation Menu -->
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t border-[#F29378]/30 px-6 py-3 rounded-b-2xl">
+                                    <div class="flex items-center justify-between relative">
+                                        <!-- Accueil Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-home text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Accueil</span>
+                                        </div>
+
+                                        <!-- Recherche Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-search text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Recherche</span>
+                                        </div>
+
+                                        <!-- QR Code Center Action Button - Active -->
+                                        <div class="flex flex-col items-center">
+                                            <div
+                                                class="w-12 h-12 bg-[#E8553B] rounded-full flex items-center justify-center shadow-lg -mt-2">
+                                                <i class="fas fa-qrcode text-white text-lg"></i>
+                                            </div>
+                                            <span class="text-xs text-[#E8553B] font-semibold mt-1">QR Code</span>
+                                        </div>
+
+                                        <!-- Historique Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-clock-rotate-left text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Historique</span>
+                                        </div>
+
+                                        <!-- Profil Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-user text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Profil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Welcome Screen - Modern Color Palette -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute top-40 left-10 w-16 h-16 bg-[#007BD8]/20 rounded-lg rotate-12">
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-12 pb-8">
+                                        <!-- App Logo -->
+                                        <div
+                                            class="w-20 h-20 bg-[#E8553B] rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-xl">
+                                            <span class="text-white text-lg font-bold">T'A</span>
+                                        </div>
+
+                                        <!-- Welcome Text -->
+                                        <h1 class="text-[#4B1D13] text-3xl font-bold mb-3 tracking-tight">
+                                            Bienvenue
+                                        </h1>
+                                        <p class="text-[#4B1D13] text-base font-semibold mb-2">T'access Sport Club</p>
+                                        <p class="text-[#4B1D13]/70 text-sm px-4 leading-relaxed">
+                                            Votre portail sportif au Maroc
+                                        </p>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-8 pb-6 shadow-xl">
+                                        <!-- Language Selection Card -->
+                                        <div class="bg-[#FBDDD4]/50 rounded-2xl p-1 mb-8 border border-[#F29378]/30">
+                                            <div class="flex">
+                                                <button
+                                                    class="flex-1 py-3 px-4 bg-[#E8553B] text-white rounded-xl text-sm font-semibold shadow-sm hover:bg-[#007BD8] transition-colors">
+                                                    <span class="text-base mr-2">🇫🇷</span>
+                                                    Français
+                                                </button>
+                                                <button
+                                                    class="flex-1 py-3 px-4 text-[#4B1D13] rounded-xl text-sm font-medium hover:bg-white/60 transition-colors">
+                                                    <span class="text-base mr-2">🇲🇦</span>
+                                                    العربية
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Main Actions -->
+                                        <div class="space-y-4 mb-8">
+                                            <button
+                                                class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transform hover:scale-[0.98] transition-all">
+                                                Se connecter
+                                            </button>
+
+                                            <button
+                                                class="w-full border-2 border-[#E8553B] text-[#E8553B] py-4 px-6 rounded-2xl font-semibold text-lg hover:bg-[#E8553B] hover:text-white transition-all">
+                                                Créer un compte
+                                            </button>
+                                        </div>
+
+                                        <!-- Features List -->
+                                        <div class="space-y-4 mb-8">
+                                            <div class="flex items-center">
+                                                <div
+                                                    class="w-8 h-8 bg-[#E8553B]/20 text-[#E8553B] rounded-xl flex items-center justify-center mr-3 text-sm font-bold">
+                                                    ✓
+                                                </div>
+                                                <span class="text-[#4B1D13] text-sm font-medium">Réservation en
+                                                    ligne</span>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <div
+                                                    class="w-8 h-8 bg-[#E8553B]/20 text-[#E8553B] rounded-xl flex items-center justify-center mr-3 text-sm font-bold">
+                                                    ✓
+                                                </div>
+                                                <span class="text-[#4B1D13] text-sm font-medium">Accès à toutes les
+                                                    infrastructures</span>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <div
+                                                    class="w-8 h-8 bg-[#007BD8]/20 text-[#007BD8] rounded-xl flex items-center justify-center mr-3 text-sm font-bold">
+                                                    ✓
+                                                </div>
+                                                <span class="text-[#4B1D13] text-sm font-medium">Paiement
+                                                    sécurisé</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Footer -->
+                                        <div class="text-center">
+                                            <p class="text-xs text-[#4B1D13]/60 mb-4">
+                                                🛡️ Certifié et sécurisé
+                                            </p>
+                                            <div class="flex items-center justify-center space-x-4">
+                                                <div class="w-8 h-1 bg-[#E8553B] rounded-full"></div>
+                                                <div class="w-2 h-2 bg-[#F29378] rounded-full"></div>
+                                                <div class="w-8 h-1 bg-[#E8553B] rounded-full"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Login Screen -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-8 pb-4">
+                                        <button class="absolute top-8 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-2xl font-bold">Connexion</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-8 pb-6 shadow-xl">
+                                        <div class="space-y-6">
+                                            <div>
+                                                <label
+                                                    class="block text-sm font-semibold text-[#4B1D13] mb-3">Email</label>
+                                                <input type="email"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10"
+                                                    placeholder="votre@email.com">
+                                            </div>
+
+                                            <div>
+                                                <label class="block text-sm font-semibold text-[#4B1D13] mb-3">Mot de
+                                                    passe</label>
+                                                <input type="password"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10"
+                                                    placeholder="••••••••">
+                                            </div>
+
+                                            <button
+                                                class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                                Se connecter
+                                            </button>
+
+                                            <div class="text-center">
+                                                <span class="text-[#4B1D13]/60 font-medium">ou</span>
+                                            </div>
+
+                                            <button
+                                                class="w-full border-2 border-[#E8553B] text-[#E8553B] py-4 px-6 rounded-2xl font-semibold hover:bg-[#E8553B] hover:text-white transition-all">
+                                                📱 Connexion par téléphone
+                                            </button>
+
+                                            <div class="text-center pt-4">
+                                                <a href="#" class="text-[#E8553B] text-sm font-semibold">Mot de passe
+                                                    oublié?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. OTP Verification -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#007BD8]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-8 pb-4">
+                                        <button class="absolute top-8 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-2xl font-bold">Vérification OTP</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-8 pb-6 shadow-xl">
+                                        <div class="text-center">
+                                            <p class="text-[#4B1D13]/70 mb-8 font-medium">Code envoyé au +212 6XX XX XX
+                                                XX</p>
+
+                                            <div class="flex justify-center gap-3 mb-8">
+                                                <input type="text" maxlength="1"
+                                                    class="w-14 h-14 text-center text-xl font-bold border border-[#F29378]/30 rounded-2xl focus:border-[#E8553B] focus:ring-2 focus:ring-[#E8553B]/20 transition-all bg-[#FBDDD4]/10">
+                                                <input type="text" maxlength="1"
+                                                    class="w-14 h-14 text-center text-xl font-bold border border-[#F29378]/30 rounded-2xl focus:border-[#E8553B] focus:ring-2 focus:ring-[#E8553B]/20 transition-all bg-[#FBDDD4]/10">
+                                                <input type="text" maxlength="1"
+                                                    class="w-14 h-14 text-center text-xl font-bold border border-[#F29378]/30 rounded-2xl focus:border-[#E8553B] focus:ring-2 focus:ring-[#E8553B]/20 transition-all bg-[#FBDDD4]/10">
+                                                <input type="text" maxlength="1"
+                                                    class="w-14 h-14 text-center text-xl font-bold border border-[#F29378]/30 rounded-2xl focus:border-[#E8553B] focus:ring-2 focus:ring-[#E8553B]/20 transition-all bg-[#FBDDD4]/10">
+                                            </div>
+
+                                            <button
+                                                class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all mb-6">
+                                                Vérifier
+                                            </button>
+
+                                            <div class="text-center">
+                                                <span class="text-[#4B1D13]/60 font-medium">Code non reçu? </span>
+                                                <a href="#" class="text-[#E8553B] font-semibold">Renvoyer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Step 1 - Geolocation -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#007BD8]/20 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Étape 1/7 - Localisation</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Progress Bar -->
+                                        <div class="w-full bg-[#FBDDD4]/30 rounded-full h-2 mb-6">
+                                            <div class="bg-gradient-to-r from-[#E8553B] to-[#F29378] h-2 rounded-full"
+                                                style="width: 14%"></div>
+                                        </div>
+
+                                        <div class="space-y-4 mb-6">
+                                            <div
+                                                class="border-2 border-[#E8553B] bg-[#E8553B]/10 rounded-2xl p-4 cursor-pointer">
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="w-12 h-12 bg-[#E8553B] text-white rounded-2xl flex items-center justify-center mr-4 text-xl">
+                                                        📍</div>
+                                                    <div>
+                                                        <h3 class="font-bold text-[#4B1D13]">Position actuelle</h3>
+                                                        <p class="text-sm text-[#4B1D13]/70">Détection automatique GPS
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="border-2 border-[#F29378]/30 rounded-2xl p-4 cursor-pointer hover:border-[#E8553B] transition-colors">
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="w-12 h-12 bg-[#007BD8] text-white rounded-2xl flex items-center justify-center mr-4 text-xl">
+                                                        🏙️</div>
+                                                    <div>
+                                                        <h3 class="font-bold text-[#4B1D13]">Choisir manuellement</h3>
+                                                        <p class="text-sm text-[#4B1D13]/70">Sélectionner une ville</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-6">
+                                            <label class="block text-sm font-bold text-[#4B1D13] mb-3">Ville
+                                                détectée</label>
+                                            <input type="text" value="Casablanca" readonly
+                                                class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl bg-[#FBDDD4]/10">
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Continuer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Dashboard -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#007BD8]/20 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section with User Info -->
+                                    <div class="px-6 pt-6 pb-4">
+                                        <div class="flex items-center mb-4">
+                                            <div
+                                                class="w-16 h-16 bg-[#E8553B]/20 backdrop-blur-sm rounded-full flex items-center justify-center text-2xl mr-4 border border-[#E8553B]/30">
+                                                👤</div>
+                                            <div>
+                                                <h2 class="text-xl font-bold text-[#4B1D13]">Ahmed ALAMI</h2>
+                                                <p class="text-[#4B1D13]/70 text-sm">Membre actif</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center bg-[#E8553B]/20 backdrop-blur-sm rounded-lg p-2 border border-[#E8553B]/30">
+                                            <div class="w-3 h-3 bg-[#E8553B] rounded-full mr-2"></div>
+                                            <span class="text-[#4B1D13] text-sm font-medium">Abonnement valide jusqu'au
+                                                15/12/2024</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-24 overflow-y-auto shadow-xl">
+                                        <!-- Dashboard Cards -->
+                                        <div class="grid grid-cols-2 gap-4 mb-6">
+                                            <div
+                                                class="bg-[#FBDDD4]/30 rounded-2xl p-4 text-center border border-[#F29378]/20">
+                                                <div
+                                                    class="w-10 h-10 bg-[#E8553B] text-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                                                    📱</div>
+                                                <h3 class="font-semibold text-[#4B1D13] text-sm">QR Code</h3>
+                                                <p class="text-xs text-[#4B1D13]/70">Accès rapide</p>
+                                            </div>
+
+                                            <div
+                                                class="bg-[#FBDDD4]/30 rounded-2xl p-4 text-center border border-[#F29378]/20">
+                                                <div
+                                                    class="w-10 h-10 bg-[#E8553B] text-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                                                    📊</div>
+                                                <h3 class="font-semibold text-[#4B1D13] text-sm">Abonnement</h3>
+                                                <p class="text-xs text-[#4B1D13]/70">Gérer</p>
+                                            </div>
+
+                                            <div
+                                                class="bg-[#FBDDD4]/30 rounded-2xl p-4 text-center border border-[#F29378]/20">
+                                                <div
+                                                    class="w-10 h-10 bg-[#F29378] text-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                                                    💳</div>
+                                                <h3 class="font-semibold text-[#4B1D13] text-sm">Paiements</h3>
+                                                <p class="text-xs text-[#4B1D13]/70">Historique</p>
+                                            </div>
+
+                                            <div
+                                                class="bg-[#FBDDD4]/30 rounded-2xl p-4 text-center border border-[#F29378]/20">
+                                                <div
+                                                    class="w-10 h-10 bg-[#007BD8] text-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                                                    👤</div>
+                                                <h3 class="font-semibold text-[#4B1D13] text-sm">Profil</h3>
+                                                <p class="text-xs text-[#4B1D13]/70">Modifier</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Recent Activity -->
+                                        <div>
+                                            <h3 class="font-semibold text-[#4B1D13] mb-3">Activité récente</h3>
+                                            <div class="space-y-2">
+                                                <div
+                                                    class="flex justify-between items-center py-2 border-b border-[#F29378]/20">
+                                                    <span class="text-sm text-[#4B1D13]/70">Football - 15/11</span>
+                                                    <span
+                                                        class="text-xs text-[#E8553B] bg-[#E8553B]/10 px-2 py-1 rounded-full border border-[#E8553B]/20">✓
+                                                        Confirmé</span>
+                                                </div>
+                                                <div
+                                                    class="flex justify-between items-center py-2 border-b border-[#F29378]/20">
+                                                    <span class="text-sm text-[#4B1D13]/70">Tennis - 14/11</span>
+                                                    <span
+                                                        class="text-xs text-[#E8553B] bg-[#E8553B]/10 px-2 py-1 rounded-full border border-[#E8553B]/20">✓
+                                                        Confirmé</span>
+                                                </div>
+                                                <div
+                                                    class="flex justify-between items-center py-2 border-b border-[#F29378]/20">
+                                                    <span class="text-sm text-[#4B1D13]/70">Natation - 13/11</span>
+                                                    <span
+                                                        class="text-xs text-[#E8553B] bg-[#E8553B]/10 px-2 py-1 rounded-full border border-[#E8553B]/20">✓
+                                                        Confirmé</span>
+                                                </div>
+                                                <div class="flex justify-between items-center py-2">
+                                                    <span class="text-sm text-[#4B1D13]/70">Basketball - 12/11</span>
+                                                    <span
+                                                        class="text-xs text-[#E8553B] bg-[#E8553B]/10 px-2 py-1 rounded-full border border-[#E8553B]/20">✓
+                                                        Confirmé</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fixed Bottom Navigation Menu -->
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t border-[#F29378]/30 px-6 py-3 rounded-b-2xl">
+                                    <div class="flex items-center justify-between relative">
+                                        <!-- Accueil Tab - Active -->
+                                        <div class="flex flex-col items-center">
+                                            <div
+                                                class="w-6 h-6 bg-[#E8553B] rounded-lg flex items-center justify-center mb-1">
+                                                <i class="fas fa-home text-white text-xs"></i>
+                                            </div>
+                                            <span class="text-xs font-semibold text-[#E8553B]">Accueil</span>
+                                        </div>
+
+                                        <!-- Recherche Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-search text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Recherche</span>
+                                        </div>
+
+                                        <!-- QR Code Center Action Button -->
+                                        <div class="flex flex-col items-center">
+                                            <div
+                                                class="w-12 h-12 bg-[#E8553B] rounded-full flex items-center justify-center shadow-lg -mt-2">
+                                                <i class="fas fa-qrcode text-white text-lg"></i>
+                                            </div>
+                                            <span class="text-xs text-[#E8553B] font-semibold mt-1">QR Code</span>
+                                        </div>
+
+                                        <!-- Historique Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-clock-rotate-left text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Historique</span>
+                                        </div>
+
+                                        <!-- Profil Tab -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center mb-1">
+                                                <i class="fas fa-user text-[#4B1D13]/60 text-sm"></i>
+                                            </div>
+                                            <span class="text-xs text-[#4B1D13]/60">Profil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 6: Step 2 - Infrastructure Selection -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+                                
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#007BD8]/20 rounded-full"></div>
+                                </div>
+                                
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <button class="absolute top-6 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Étape 2/7 - Infrastructure</h1>
+                                    </div>
+                                    <div class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Progress Bar -->
+                                        <div class="w-full bg-[#FBDDD4]/30 rounded-full h-2 mb-6">
+                                            <div class="bg-gradient-to-r from-[#E8553B] to-[#F29378] h-2 rounded-full" style="width: 28%"></div>
+                                        </div>
+
+                                        <h2 class="text-lg font-bold text-[#4B1D13] mb-4">Choisir votre infrastructure</h2>
+
+                                        <div class="space-y-4 mb-6">
+                                            <div
+                                                class="border-2 border-[#E8553B] bg-[#E8553B]/10 rounded-2xl p-4 cursor-pointer">
+                                                <div class="flex items-start mb-3">
+                                                    <div
+                                                        class="w-12 h-12 bg-[#E8553B] text-white rounded-2xl flex items-center justify-center mr-3 text-xl">
+                                                        🏟️</div>
+                                                    <div>
+                                                        <h3 class="font-bold text-[#4B1D13]">Complexe Mohammed V</h3>
+                                                        <p class="text-sm text-[#4B1D13]/70">2.3 km • Casablanca</p>
+                                                    </div>
+                                                </div>
+                                                <div class="grid grid-cols-2 gap-2">
+                                                    <div
+                                                        class="bg-white rounded-lg p-2 text-center text-xs font-medium text-[#4B1D13]">
+                                                        ⚽ Football</div>
+                                                    <div
+                                                        class="bg-white rounded-lg p-2 text-center text-xs font-medium text-[#4B1D13]">
+                                                        🏀 Basketball</div>
+                                                    <div
+                                                        class="bg-white rounded-lg p-2 text-center text-xs font-medium text-[#4B1D13]">
+                                                        🏐 Volleyball</div>
+                                                    <div
+                                                        class="bg-white rounded-lg p-2 text-center text-xs font-medium text-[#4B1D13]">
+                                                        🎾 Tennis</div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="border-2 border-[#F29378]/30 rounded-2xl p-4 cursor-pointer hover:border-[#E8553B] transition-colors">
+                                                <div class="flex items-start mb-3">
+                                                    <div
+                                                        class="w-12 h-12 bg-[#007BD8] text-white rounded-2xl flex items-center justify-center mr-3 text-xl">
+                                                        🏊</div>
+                                                    <div>
+                                                        <h3 class="font-bold text-[#4B1D13]">Piscine Olympique</h3>
+                                                        <p class="text-sm text-[#4B1D13]/70">3.7 km • Casablanca</p>
+                                                    </div>
+                                                </div>
+                                                <div class="grid grid-cols-2 gap-2">
+                                                    <div class="bg-[#FBDDD4]/20 rounded-lg p-2 text-center text-xs text-[#4B1D13]">🏊
+                                                        Natation</div>
+                                                    <div class="bg-[#FBDDD4]/20 rounded-lg p-2 text-center text-xs text-[#4B1D13]">🤽
+                                                        Water-polo</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Continuer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 7: Step 3 - User Profile -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#007BD8]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <button class="absolute top-6 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Étape 3/7 - Profil</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Progress Bar -->
+                                        <div class="w-full bg-[#FBDDD4]/30 rounded-full h-2 mb-6">
+                                            <div class="bg-gradient-to-r from-[#E8553B] to-[#F29378] h-2 rounded-full"
+                                                style="width: 42%"></div>
+                                        </div>
+
+                                        <div class="space-y-4">
+                                            <div>
+                                                <label class="block text-sm font-bold text-[#4B1D13] mb-2">Nom
+                                                    complet</label>
+                                                <input type="text"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10"
+                                                    placeholder="Ahmed Ben Ali">
+                                            </div>
+
+                                            <div>
+                                                <label class="block text-sm font-bold text-[#4B1D13] mb-2">Date de
+                                                    naissance</label>
+                                                <input type="date"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10">
+                                            </div>
+
+                                            <div>
+                                                <label
+                                                    class="block text-sm font-bold text-[#4B1D13] mb-2">Téléphone</label>
+                                                <input type="tel"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10"
+                                                    placeholder="+212 6XX XX XX XX">
+                                            </div>
+
+                                            <div>
+                                                <label class="block text-sm font-bold text-[#4B1D13] mb-2">Email</label>
+                                                <input type="email"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10"
+                                                    placeholder="votre@email.com">
+                                            </div>
+
+                                            <div>
+                                                <label class="block text-sm font-bold text-[#4B1D13] mb-2">CIN /
+                                                    Passeport</label>
+                                                <input type="text"
+                                                    class="w-full px-4 py-4 border border-[#F29378]/30 rounded-2xl focus:ring-2 focus:ring-[#E8553B] focus:border-[#E8553B] transition-all bg-[#FBDDD4]/10"
+                                                    placeholder="A123456">
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all mt-4">
+                                            Continuer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 8: Step 4 - Document Upload -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#007BD8]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <button class="absolute top-6 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Étape 4/7 - Document</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Progress Bar -->
+                                        <div class="w-full bg-[#FBDDD4]/30 rounded-full h-2 mb-6">
+                                            <div class="bg-gradient-to-r from-[#E8553B] to-[#F29378] h-2 rounded-full"
+                                                style="width: 56%"></div>
+                                        </div>
+
+                                        <h2 class="text-lg font-bold text-[#4B1D13] mb-4">Document d'identité</h2>
+
+                                        <!-- Upload Area -->
+                                        <div
+                                            class="border-2 border-dashed border-[#F29378] rounded-2xl p-6 text-center mb-6 bg-[#FBDDD4]/20">
+                                            <div
+                                                class="w-16 h-16 bg-[#E8553B] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
+                                                <span class="text-white text-2xl">📄</span>
+                                            </div>
+                                            <h3 class="text-lg font-bold text-[#4B1D13] mb-2">Télécharger document</h3>
+                                            <p class="text-sm text-[#4B1D13]/70 mb-6">JPG, PNG, PDF • Max 5MB</p>
+
+                                            <!-- Upload Options -->
+                                            <div class="space-y-3">
+                                                <button
+                                                    class="w-full bg-white/90 border-2 border-[#F29378]/30 text-[#4B1D13] py-3 px-4 rounded-2xl font-semibold hover:bg-[#FBDDD4]/30 hover:border-[#E8553B] transition-all">
+                                                    📷 Prendre une photo
+                                                </button>
+
+                                                <button
+                                                    class="w-full bg-white/90 border-2 border-[#F29378]/30 text-[#4B1D13] py-3 px-4 rounded-2xl font-semibold hover:bg-[#FBDDD4]/30 hover:border-[#E8553B] transition-all">
+                                                    🖼️ Galerie photos
+                                                </button>
+
+                                                <button
+                                                    class="w-full bg-white/90 border-2 border-[#F29378]/30 text-[#4B1D13] py-3 px-4 rounded-2xl font-semibold hover:bg-[#FBDDD4]/30 hover:border-[#E8553B] transition-all">
+                                                    📁 Parcourir fichiers
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Security Note -->
+                                        <div class="bg-[#E8553B]/10 border border-[#E8553B]/30 rounded-2xl p-3 mb-4">
+                                            <div class="flex items-center">
+                                                <div
+                                                    class="w-6 h-6 bg-[#E8553B] rounded-full flex items-center justify-center mr-3">
+                                                    <span class="text-white text-xs">🛡️</span>
+                                                </div>
+                                                <div>
+                                                    <h5 class="font-bold text-[#E8553B] text-sm">Sécurité garantie</h5>
+                                                    <p class="text-[#4B1D13]/70 text-xs">Documents conformes RGPD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Continuer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 9: Step 5 - Subscription Selection -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#007BD8]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <button class="absolute top-6 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Étape 5/7 - Abonnement</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Progress Bar -->
+                                        <div class="w-full bg-[#FBDDD4]/30 rounded-full h-2 mb-6">
+                                            <div class="bg-gradient-to-r from-[#E8553B] to-[#F29378] h-2 rounded-full"
+                                                style="width: 70%"></div>
+                                        </div>
+
+                                        <h2 class="text-lg font-bold text-[#4B1D13] mb-4">Choisir votre abonnement</h2>
+
+                                        <div class="space-y-4 mb-6">
+                                            <div class="border-2 border-[#E8553B] bg-[#E8553B]/10 rounded-2xl p-4">
+                                                <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="font-bold text-[#4B1D13]">Mensuel</h3>
+                                                    <span class="text-2xl font-bold text-[#E8553B]">150 MAD</span>
+                                                </div>
+                                                <p class="text-sm text-[#4B1D13]/70 mb-3">Accès complet • 30 jours</p>
+                                                <div
+                                                    class="text-xs text-[#E8553B] bg-[#E8553B]/10 px-2 py-1 rounded-full inline-block border border-[#E8553B]/20">
+                                                    ✓ Recommandé</div>
+                                            </div>
+
+                                            <div
+                                                class="border-2 border-[#F29378]/30 rounded-2xl p-4 hover:border-[#E8553B] transition-colors cursor-pointer">
+                                                <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="font-bold text-[#4B1D13]">Annuel</h3>
+                                                    <div class="text-right">
+                                                        <span class="text-2xl font-bold text-[#4B1D13]">1500 MAD</span>
+                                                        <p class="text-xs text-[#E8553B]">-17% économie</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-sm text-[#4B1D13]/70">Accès complet • 365 jours</p>
+                                            </div>
+
+                                            <div
+                                                class="border-2 border-[#F29378]/30 rounded-2xl p-4 hover:border-[#E8553B] transition-colors cursor-pointer">
+                                                <div class="flex justify-between items-start mb-2">
+                                                    <h3 class="font-bold text-[#4B1D13]">Pack 10 sessions</h3>
+                                                    <span class="text-2xl font-bold text-[#4B1D13]">400 MAD</span>
+                                                </div>
+                                                <p class="text-sm text-[#4B1D13]/70">10 accès • Valable 3 mois</p>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Continuer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 10: Step 6 - Payment -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <!-- Status Bar -->
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#007BD8]/20 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#E8553B]/15 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <!-- Header Section -->
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <button class="absolute top-6 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Étape 6/7 - Paiement</h1>
+                                    </div>
+
+                                    <!-- White Card Section -->
+                                    <div
+                                        class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Progress Bar -->
+                                        <div class="w-full bg-[#FBDDD4]/30 rounded-full h-2 mb-6">
+                                            <div class="bg-gradient-to-r from-[#E8553B] to-[#F29378] h-2 rounded-full"
+                                                style="width: 84%"></div>
+                                        </div>
+
+                                        <!-- Order Summary -->
+                                        <div class="bg-[#FBDDD4]/30 rounded-2xl p-4 mb-6 border border-[#F29378]/20">
+                                            <h3 class="font-bold text-[#4B1D13] mb-3">Récapitulatif</h3>
+                                            <div class="flex justify-between items-center mb-2">
+                                                <span class="text-sm text-[#4B1D13]/70">Abonnement Mensuel</span>
+                                                <span class="font-semibold text-[#4B1D13]">150 MAD</span>
+                                            </div>
+                                            <div class="flex justify-between items-center mb-2">
+                                                <span class="text-sm text-[#4B1D13]/70">Infrastructure</span>
+                                                <span class="text-sm text-[#4B1D13]/70">Complexe Mohammed V</span>
+                                            </div>
+                                            <hr class="my-3 border-[#F29378]/30">
+                                            <div class="flex justify-between items-center">
+                                                <span class="font-bold text-[#4B1D13]">Total</span>
+                                                <span class="text-xl font-bold text-[#E8553B]">150 MAD</span>
+                                            </div>
+                                        </div>
+
+                                        <h2 class="text-lg font-bold text-[#4B1D13] mb-4">Mode de paiement</h2>
+
+                                        <div class="space-y-3 mb-6">
+                                            <div
+                                                class="border-2 border-[#E8553B] bg-[#E8553B]/10 rounded-2xl p-4 cursor-pointer">
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="w-12 h-12 bg-[#E8553B] text-white rounded-2xl flex items-center justify-center mr-3">
+                                                        💳</div>
+                                                    <div>
+                                                        <h3 class="font-bold text-[#4B1D13]">Paiement en ligne</h3>
+                                                        <p class="text-sm text-[#4B1D13]/70">Carte bancaire sécurisée
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="border-2 border-[#F29378]/30 rounded-2xl p-4 cursor-pointer hover:border-[#E8553B] transition-colors">
+                                                <div class="flex items-center">
+                                                    <div
+                                                        class="w-12 h-12 bg-[#007BD8] text-white rounded-2xl flex items-center justify-center mr-3">
+                                                        🏦</div>
+                                                    <div>
+                                                        <h3 class="font-bold text-[#4B1D13]">Agence bancaire</h3>
+                                                        <p class="text-sm text-[#4B1D13]/70">Token de paiement</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Payer maintenant
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 11: Step 7 - Confirmation + QR Code -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+                                
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#007BD8]/20 rounded-full"></div>
+                                </div>
+                                
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Inscription confirmée ✅</h1>
+                                    </div>
+                                    <div class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Success Message -->
+                                        <div class="text-center mb-6">
+                                            <div
+                                                class="w-20 h-20 bg-[#E8553B] rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
+                                                <span class="text-white text-3xl">✅</span>
+                                            </div>
+                                            <h2 class="text-xl font-bold text-[#4B1D13] mb-2">Félicitations!</h2>
+                                            <p class="text-[#4B1D13]/70">Votre inscription est confirmée</p>
+                                        </div>
+
+                                        <!-- QR Code -->
+                                        <div class="bg-[#FBDDD4]/30 border border-[#F29378]/20 rounded-2xl p-6 text-center mb-6">
+                                            <h3 class="font-bold text-[#4B1D13] mb-4">Votre QR Code d'accès</h3>
+                                            <div
+                                                class="w-32 h-32 bg-white border-2 border-[#F29378]/30 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
+                                                <div
+                                                    class="w-24 h-24 bg-[#FBDDD4]/50 rounded-lg flex items-center justify-center border-2 border-dashed border-[#F29378]">
+                                                    <i class="fas fa-qrcode text-[#4B1D13]/60 text-3xl"></i>
+                                                </div>
+                                            </div>
+                                            <p class="text-sm text-[#4B1D13]/70">Présentez ce code à l'entrée</p>
+                                        </div>
+
+                                        <!-- Receipt -->
+                                        <div class="bg-[#E8553B]/10 border border-[#E8553B]/20 rounded-2xl p-4 mb-6">
+                                            <div class="flex items-center mb-2">
+                                                <span class="text-[#E8553B] mr-2">📧</span>
+                                                <span class="text-sm font-semibold text-[#E8553B]">Reçu électronique
+                                                    envoyé</span>
+                                            </div>
+                                            <p class="text-xs text-[#4B1D13]/70">Vérifiez votre email pour le reçu détaillé
+                                            </p>
+                                        </div>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Accéder au Dashboard
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Screen 12: Manage Subscription -->
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <div class="w-80 h-[640px] bg-black rounded-3xl p-2 phone-shadow mx-auto">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-[#FBDDD4] via-[#FBDDD4] to-[#F29378] rounded-2xl overflow-hidden relative">
+                                <div class="flex justify-between items-center px-4 py-2 text-sm text-[#4B1D13]">
+                                    <span class="font-medium">9:41</span>
+                                    <span class="font-medium">🔋 100%</span>
+                                </div>
+                                <!-- Background Decorative Elements -->
+                                <div class="absolute inset-0 overflow-hidden">
+                                    <div class="absolute top-20 right-8 w-32 h-32 bg-[#E8553B]/15 rounded-full"></div>
+                                    <div class="absolute bottom-32 left-6 w-24 h-24 bg-[#007BD8]/20 rounded-full"></div>
+                                </div>
+
+                                <!-- Content -->
+                                <div class="relative flex flex-col phone-content">
+                                    <div class="text-center px-6 pt-6 pb-4">
+                                        <button class="absolute top-6 left-6 text-[#4B1D13] text-2xl">←</button>
+                                        <h1 class="text-[#4B1D13] text-xl font-bold">Gérer Abonnement</h1>
+                                    </div>
+                                    <div class="flex-1 bg-white/90 backdrop-blur-sm rounded-t-3xl px-6 pt-6 pb-6 shadow-xl">
+                                        <!-- Current Subscription -->
+                                        <div class="bg-[#FBDDD4]/30 border border-[#F29378]/20 rounded-2xl p-4 mb-6">
+                                            <div class="flex justify-between items-start mb-3">
+                                                <div>
+                                                    <h3 class="font-bold text-[#4B1D13]">Abonnement Actuel</h3>
+                                                    <p class="text-sm text-[#4B1D13]/70">Mensuel - 150 MAD</p>
+                                                </div>
+                                                <div class="text-xs bg-[#E8553B]/10 text-[#E8553B] px-2 py-1 rounded-full border border-[#E8553B]/20">
+                                                    ✓ Actif</div>
+                                            </div>
+                                            <div class="text-sm text-[#4B1D13]/70">
+                                                <p>Expire le: <span class="font-semibold text-[#4B1D13]">15 Décembre 2024</span></p>
+                                                <p>Infrastructure: <span class="font-semibold text-[#4B1D13]">Complexe Mohammed
+                                                        V</span></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Subscription Options -->
+                                        <h3 class="font-bold text-[#4B1D13] mb-4">Options d'abonnement</h3>
+
+                                        <div class="space-y-3 mb-6">
+                                            <div class="border-2 border-[#E8553B] bg-[#E8553B]/10 rounded-2xl p-4">
+                                                <div class="flex justify-between items-center">
+                                                    <div>
+                                                        <h4 class="font-semibold text-[#4B1D13]">Mensuel</h4>
+                                                        <p class="text-sm text-[#4B1D13]/70">150 MAD/mois</p>
+                                                    </div>
+                                                    <button
+                                                        class="bg-[#E8553B] text-white px-4 py-2 rounded-xl font-semibold text-sm">Actuel</button>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="border border-[#F29378]/30 rounded-2xl p-4 hover:border-[#E8553B] transition-colors cursor-pointer">
+                                                <div class="flex justify-between items-center">
+                                                    <div>
+                                                        <h4 class="font-semibold text-[#4B1D13]">Annuel</h4>
+                                                        <p class="text-sm text-[#4B1D13]/70">1500 MAD/an (-17%)</p>
+                                                    </div>
+                                                    <button
+                                                        class="border-2 border-[#E8553B] text-[#E8553B] px-4 py-2 rounded-xl font-semibold text-sm hover:bg-[#E8553B] hover:text-white transition-colors">Changer</button>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="border border-[#F29378]/30 rounded-2xl p-4 hover:border-[#E8553B] transition-colors cursor-pointer">
+                                                <div class="flex justify-between items-center">
+                                                    <div>
+                                                        <h4 class="font-semibold text-[#4B1D13]">Pack 10 sessions</h4>
+                                                        <p class="text-sm text-[#4B1D13]/70">400 MAD (3 mois)</p>
+                                                    </div>
+                                                    <button
+                                                        class="border-2 border-[#E8553B] text-[#E8553B] px-4 py-2 rounded-xl font-semibold text-sm hover:bg-[#E8553B] hover:text-white transition-colors">Changer</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Renewal Button -->
+                                        <button
+                                            class="w-full bg-gradient-to-r from-[#E8553B] to-[#F29378] text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:from-[#E8553B]/90 hover:to-[#F29378]/90 transition-all">
+                                            Renouveler maintenant
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <!-- Navigation Controls -->
+            <div class="flex justify-between items-center mt-6 navigation-controls">
+                <button id="prev-btn"
+                    class="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-white/30 transition-all disabled:opacity-50"
+                    disabled>
+                    ← Précédent
+                </button>
+
+                <!-- Progress Dots -->
+                <div class="flex space-x-2" id="progress-dots">
+                    <div class="w-3 h-3 bg-white rounded-full opacity-100"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                    <div class="w-3 h-3 bg-white/30 rounded-full"></div>
+                </div>
+
+                <button id="next-btn"
+                    class="bg-white text-blue-600 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-gray-50 transition-all">
+                    Suivant →
+                </button>
+            </div>
+
+
+        </div>
+
+        <script>
+            let currentSlide = 0;
+            const totalSlides = 13;
+            const carousel = document.getElementById('carousel');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const currentScreenSpan = document.getElementById('current-screen');
+            const progressDots = document.querySelectorAll('#progress-dots div');
+
+            function updateCarousel() {
+                const translateX = -currentSlide * 100;
+                carousel.style.transform = `translateX(${translateX}%)`;
+
+                // Update counter
+                currentScreenSpan.textContent = currentSlide + 1;
+
+                // Update buttons
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+
+                // Update progress dots
+                progressDots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.className = 'w-3 h-3 bg-white rounded-full opacity-100';
+                    } else {
+                        dot.className = 'w-3 h-3 bg-white/30 rounded-full';
+                    }
+                });
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            });
+
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                } else if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            });
+
+            // Touch/Swipe navigation for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            carousel.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            carousel.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                const swipeThreshold = 50; // minimum distance for swipe
+                const swipeDistance = touchEndX - touchStartX;
+
+                if (Math.abs(swipeDistance) > swipeThreshold) {
+                    if (swipeDistance > 0 && currentSlide > 0) {
+                        // Swipe right - go to previous slide
+                        currentSlide--;
+                        updateCarousel();
+                    } else if (swipeDistance < 0 && currentSlide < totalSlides - 1) {
+                        // Swipe left - go to next slide
+                        currentSlide++;
+                        updateCarousel();
+                    }
+                }
+            }
+
+            function toggleTheme() {
+                document.documentElement.classList.toggle('dark');
+                localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+            }
+
+            // Check for saved theme preference or default to light mode
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark');
+            }
+        </script>
+</body>
+
+</html>
